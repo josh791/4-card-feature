@@ -1,0 +1,169 @@
+ body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+ }
+.card {
+    height: 100vh;
+    background-color:  hsl(0, 0%, 98%);
+}
+.card-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+   align-content: center;
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+   font-size: 15px;
+   margin-top: 1rem;
+}
+.first {
+    font-size: large;
+    font-weight: 750;
+    color:  hsl(0, 4%, 53%);
+}
+
+.header b {
+    font-weight: 800;
+    font-size: larger;
+}
+.header p {
+    font-weight: 200;
+    font-size: small;
+    color:  hsl(0, 4%, 53%);
+}
+.books {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+.supervisor {
+    border-top-style: solid;
+    border-color:hsl(180, 62%, 55%);
+    box-shadow: -0.5px 3px 5px rgb(156, 154, 154);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 0.4rem;
+    padding: 2rem;
+    grid-column:2/3;
+    grid-row:1/3;
+    
+}
+.supervisor p {
+    font-weight: 200;
+    font-size: small;
+    color:  hsl(0, 4%, 53%);
+}
+.supervisor svg {
+    align-self: end;
+}
+.TB {
+    border-top-style: solid;
+    border-color: hsl(0, 78%, 62%);
+    box-shadow: -0.5px 3px 5px rgb(156, 154, 154);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 0.4rem;
+    padding: 2rem;
+    grid-column:1/2 ;
+    grid-row:2/4;  
+}
+.TB P {
+    font-weight: 200;
+    font-size: small;
+    color:  hsl(0, 4%, 53%);
+}
+.TB svg {
+    align-self: end;
+}
+.karma {
+    border-top-style: solid;
+    border-color:hsl(34, 97%, 64%);
+    box-shadow: -0.5px 3px 5px rgb(156, 154, 154);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 0.4rem;
+    padding: 2rem;
+    grid-column:3/4;
+    grid-row:2/4;
+
+
+}
+.karma p {
+    font-weight: 200;
+    font-size: small;
+    color:  hsl(0, 4%, 53%);
+}
+.karma svg {
+    align-self: end;
+}
+.calculator {
+    border-top-style: solid;
+    border-color:hsl(212, 86%, 64%);
+    box-shadow: -0.5px 3px 5px rgb(156, 154, 154);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 0.4rem;
+    padding: 2rem;
+    grid-column: 2/3 ;
+    grid-row:3/5 ;
+   
+    
+}
+.calculator p {
+    font-weight: 200;
+    font-size: small;
+    color:  hsl(0, 4%, 53%);
+}
+.calculator svg {
+    align-self: end;
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width:650px){
+     
+    .card-feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+    .books {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto;
+        gap: 1rem;
+    }
+    .supervisor {
+        grid-column:1/2 ;
+        grid-row:2/3;
+    }
+    .TB {
+       
+        grid-column:1/2;
+        grid-row:1/2;
+    }
+    .karma {
+        grid-column:1/2;
+        grid-row:4/5;
+    }
+    .calculator {
+        grid-column: 1/2;
+        grid-row:3/4;
+     }   
+
+}
+
+   
